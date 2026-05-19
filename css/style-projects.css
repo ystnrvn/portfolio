@@ -1,0 +1,337 @@
+/* reset all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global */
+html, body {
+    height: 100%;
+    background-color: #EAEAEA;
+    font-family: "Space Grotesk", Helvetica, sans-serif;
+    color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-bottom: 4rem;
+}
+/* header */
+header {
+    position: relative;
+    background-color: #0125B7;
+    width: 100%;
+    padding: 1.5vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-text {
+    display: flex;
+    font-family: "Syncopate", Helvetica, sans-serif;
+    width: 96%;
+}
+
+.header-line {
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.3vw;
+    line-height: 1.2;
+}
+.header-keyword {
+    color: #F243FF;
+}
+
+.logo-top-right {
+    position: absolute;
+    top: clamp(0.15rem, 1.6vw, 6rem);
+    right: clamp(0.3rem, 1.5vw, 2rem);
+    width: clamp(0.5rem, 2.5vw, 12rem);
+    z-index: 999;
+}
+/* hero */
+.projects-hero {
+    background-color: #EAEAEA;
+    color: #1F2421;
+    padding: 2rem 1.5rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: center;
+    position: relative;
+}
+
+.projects-hero-content {
+    margin-top: clamp(1rem, 4vw, 2rem);
+}
+
+.project-heading {
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.project-subheading {
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 0.5rem 0 2rem;
+}
+.project-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.center-overlay {
+    position: absolute;
+    top: clamp(8rem, 48vw, 18rem);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: clamp(20px, 18vw, 80px);
+}
+
+.phone-mockup {
+    width: clamp(120px, 30vw, 180px);
+    margin-bottom: 3rem;
+}
+
+.desktop-mockup {
+    width: clamp(400px, 35vw, 650px);
+    margin-bottom: 3rem;
+}
+
+.view-project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Staatliches", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #0125B7;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.view-project-link:hover {
+    transform: translateX(4px);
+}
+  
+.link-arrow {
+    width: 1rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-after {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding-bottom: 1.5rem;
+}
+
+.hero-divider {
+    border: none;
+    height: 2px;
+    background-color: #858786;
+    width: 100%;
+    margin: 2rem;
+}
+
+.scroll-container {
+    width: 100%;
+    position: relative;
+    height: 2rem;
+}
+
+.scroll-prompt {
+    position: absolute;
+    top: 0 rem;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #858786;
+    font-family: "Staatliches", sans-serif;
+    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
+}
+
+/* article */
+.article {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding: clamp(2rem, 3vw, 4rem) 1.5rem;
+    padding-top: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #1F2421;
+}
+
+.abstract {
+    flex: 2;
+    text-align: left;
+    padding-right: 1rem;
+    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
+}
+
+.abstract h2 {
+    font-family: "Staatliches", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.summary-divider {
+    width: 1px;
+    background-color: #858786;
+}
+
+.summary {
+    font-size: clamp(0.8rem, 2.6vw, 1rem);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 1rem;
+}
+
+.summary-block h4 {
+    font-family: "Staatliches", sans-serif;
+    margin-bottom: 0.25rem;
+}
+
+.article-section {
+    padding: clamp(1.5rem, 4vw, 3rem) 1.5rem;
+    padding-top: 0;
+    color: #1F2421;
+    background-color: #EAEAEA;
+    margin-bottom: 3rem;
+  }
+  
+.article-section-container {
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: left;
+    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
+    font-family: "Space Grotesk", sans-serif;
+    justify-content: center;
+}
+
+.article-section h2 {
+    font-family: "Staatliches", sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    padding: 3rem 2rem 6rem 2rem;
+    background-color: #0125B7;
+    color: #EAEAEA;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+
+.footer-email {
+    font-size: clamp(0.9rem, 4vw, 5rem);
+    font-weight: bold;
+    color: #EAEAEA;
+    margin: 1rem 0;
+}
+
+.footer-right {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #EAEAEA;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #F243FF;
+}
+  
+/* navbar */
+nav {
+    border-top: 4px solid #F243FF;
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #EAEAEA;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    padding: clamp(0.75rem, 1.5vh, 2rem) 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-home {
+    background-color: #0125B7;
+}
+
+.nav-about {
+    background-color: #0F3AE6;
+}
+
+.nav-projects {
+    background-color: #2C54F2;
+}
+
+.nav-home:hover {
+    background-color: #F243FF;
+    color: #0125B7;
+    font-weight: bold;
+}
+
+.nav-about:hover {
+    background-color: #F243FF;
+    color: #0F3AE6;
+    font-weight: bold;
+}
+
+.nav-projects:hover {
+    background-color: #F243FF;
+    color: #2C54F2;
+    font-weight: bold;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1F2421;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F243FF;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F243FF;
+    border: 2px solid #858786;
+}
